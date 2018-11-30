@@ -1,0 +1,31 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  description: MyString
+  location: MyString
+  quantity: 1
+  vegetarian: false
+  vegan: false
+  gluten_free: false
+  nuts: false
+  seafood: false
+  halal: false
+  kosher: false
+  start_time: 2018-11-30 12:43:38
+  end_time: 2018-11-30 12:43:38
+
+two:
+  name: MyString
+  description: MyString
+  location: MyString
+  quantity: 1
+  vegetarian: false
+  vegan: false
+  gluten_free: false
+  nuts: false
+  seafood: false
+  halal: false
+  kosher: false
+  start_time: 2018-11-30 12:43:38
+  end_time: 2018-11-30 12:43:38
