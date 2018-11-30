@@ -1,4 +1,4 @@
 class Food < ApplicationRecord
-    belongs_to :Producer
+    belongs_to :producer
     has_many :consumers, through: :reservations
 end
