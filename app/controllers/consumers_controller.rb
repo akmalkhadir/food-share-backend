@@ -3,6 +3,4 @@ class ConsumersController < ApplicationController
         @consumers = Consumer.all
         render json: @consumers
     end
-
-
 end
