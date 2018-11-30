@@ -1,0 +1,11 @@
+class CreateReservations < ActiveRecord::Migration[5.2]
+  def change
+    create_table :reservations do |t|
+      t.integer :consumer_id
+      t.integer :food_id
+      t.integer :booking_id
+
+      t.timestamps
+    end
+  end
+end
