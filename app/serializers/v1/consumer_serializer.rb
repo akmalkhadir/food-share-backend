@@ -1,4 +1,4 @@
-class ConsumerSerializer < ActiveModel::Serializer
+class V1::ConsumerSerializer < ActiveModel::Serializer
   has_many :foods, through: :reservations
   
   attributes :id, :username
