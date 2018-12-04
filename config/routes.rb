@@ -7,7 +7,6 @@ Rails.application.routes.draw do
     resources :producers, only: [:index]
     resources :foods, only: [:index]
     resources :reservations, only: [:index, :create]
-    post 
   end
 
 end

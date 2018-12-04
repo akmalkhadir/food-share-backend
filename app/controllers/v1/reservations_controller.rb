@@ -1,20 +1,23 @@
 class V1::ReservationsController < V1::ApplicationController
-
   def index
     @reservations = Reservation.all
     render json: @reservations
   end
 
   def create
-    @reservations = Reservation.new(consumer_id: params[:consumer_id], food_id: params[:food_id])
+    @reservation = Reservation.new(reservation_params)
 
-    if @reservations.save 
-      render json: @reservations
+    if @reservation.save
+      render json: @reservation
 
-    else 
-      render json: {error: 'unable to create reservation'}, status: 400
+    else
+      render json: { error: 'unable to create reservation' }, status: 400
     end
-    
   end
 
+  private
+
+  def reservation_params
+    params.require(:reservation).permit(:consumer_id, :food_id)
+  end
 end
