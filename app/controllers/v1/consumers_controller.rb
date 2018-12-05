@@ -3,4 +3,9 @@ class V1::ConsumersController < V1::ApplicationController
         @consumers = Consumer.all
         render json: @consumers
     end
+
+    def show
+        @consumer = Consumer.find(params[:id])
+        render json: @consumer
+    end
 end
